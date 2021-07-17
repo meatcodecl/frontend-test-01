@@ -1,22 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div class="app">
+    <MeatLogo />
+    <MultilevelMenu />
+  </div>
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/master/active-rfcs/0040-script-setup.md
+import MeatLogo from './components/MeatLogo.vue';
+import MultilevelMenu from './components/MultilevelMenu.vue';
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: #222;
+  min-height: 100vh;
+  padding: 5rem 10rem;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
